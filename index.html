@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PLS LIGHTING</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Vazirmatn',sans-serif;
+}
+
+body{
+
+background:linear-gradient(180deg,#063d34,#0b5a49,#0d7058);
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:30px;
+
+color:white;
+
+}
+
+.card{
+
+width:100%;
+
+max-width:420px;
+
+background:rgba(255,255,255,.06);
+
+border:1px solid rgba(255,255,255,.15);
+
+backdrop-filter:blur(15px);
+
+border-radius:28px;
+
+padding:35px 25px;
+
+text-align:center;
+
+box-shadow:0 20px 50px rgba(0,0,0,.35);
+
+animation:fade 1s;
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.logo{
+
+width:150px;
+
+height:150px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:4px solid #d4af37;
+
+box-shadow:0 0 35px rgba(212,175,55,.45);
+
+margin-bottom:20px;
+
+}
+
+h1{
+
+font-size:34px;
+
+letter-spacing:2px;
+
+color:#d4af37;
+
+margin-bottom:8px;
+
+}
+
+.subtitle{
+
+font-size:16px;
+
+color:#ffffff;
+
+opacity:.9;
+
+margin-bottom:5px;
+
+}
+
+.slogan{
+
+color:#d4af37;
+
+font-weight:bold;
+
+margin-bottom:30px;
+
+}
+
+.line{
+
+width:120px;
+
+height:3px;
+
+background:#d4af37;
+
+margin:auto;
+
+border-radius:20px;
+
+margin-bottom:25px;
+
+}
+
+.btn{
+
+display:block;
+
+text-decoration:none;
+
+color:white;
+
+background:rgba(255,255,255,.08);
+
+padding:16px;
+
+margin:14px 0;
+
+border-radius:16px;
+
+transition:.35s;
+
+font-weight:600;
+
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+.btn:hover{
+
+background:#d4af37;
+
+color:#063d34;
+
+transform:scale(1.03);
+
+}
+
+.footer{
+
+margin-top:35px;
+
+font-size:13px;
+
+opacity:.7;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<img src="logo.png" class="logo">
+
+<h1>PLS LIGHTING</h1>
+
+<div class="subtitle">
+
+Modern Lighting & Electrical Store
+
+</div>
+
+<div class="slogan">
+
+Power • Light • Star
+
+</div>
+
+<div class="line"></div>
+
+<a class="btn" href="#">📖 کاتالوگ محصولات</a>
+
+<a class="btn" href="#">📷 اینستاگرام</a>
+
+<a class="btn" href="#">✈️ تلگرام</a>
+
+<a class="btn" href="#">📱 روبیکا</a>
+
+<a class="btn" href="#">✉️ ایتا</a>
+
+<a class="btn" href="#">🏪 درباره فروشگاه</a>
+
+<a class="btn" href="#">📍 آدرس فروشگاه</a>
+
+<a class="btn" href="tel:09120000000">☎️ تماس با ما</a>
+
+<div class="footer">
+
+© 2025 PLS LIGHTING
+
+<br><br>
+
+Power • Light • Star
+
+</div>
+
+</div>
+
+</body>
+
+</html>
+<script>
+
+// ===== لینک ها =====
+
+const links = {
+
+catalog: "catalog.pdf",
+
+instagram: "https://instagram.com/",
+
+telegram: "https://t.me/",
+
+rubika: "https://rubika.ir/",
+
+eitaa: "https://eitaa.com/",
+
+about: "#",
+
+map: "https://maps.google.com",
+
+phone: "tel:09120000000"
+
+};
+
+// ===== اتصال دکمه ها =====
+
+const buttons=document.querySelectorAll(".btn");
+
+buttons[0].href=links.catalog;
+
+buttons[1].href=links.instagram;
+
+buttons[2].href=links.telegram;
+
+buttons[3].href=links.rubika;
+
+buttons[4].href=links.eitaa;
+
+buttons[5].onclick=function(){
+
+alert(
+
+PLS LIGHTING
+
+Power • Light • Star
+
+فروشگاه تخصصی روشنایی و تجهیزات برق
+
+لامپ
+
+ریسه
+
+کلید و پریز
+
+سیم و کابل
+
+نورپردازی مدرن
+
+);
+
+};
+
+buttons[6].href=links.map;
+
+buttons[7].href=links.phone;
+
+
+// ===== افکت کلیک =====
+
+buttons.forEach(btn=>{
+
+btn.addEventListener("click",()=>{
+
+btn.style.transform="scale(.96)";
+
+setTimeout(()=>{
+
+btn.style.transform="scale(1)";
+
+},150);
+
+});
+
+});
+
+  </script>
